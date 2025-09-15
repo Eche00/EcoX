@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link, NavLink } from "react-router";
 import FlareIcon from "@mui/icons-material/Flare";
 import ThemeModal from "../theme/ThemeModal";
