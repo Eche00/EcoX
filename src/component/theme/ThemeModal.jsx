@@ -10,9 +10,6 @@ function ThemeModal() {
   return (
     <div className=" w-fit">
       {/* container  */}
-      {/* subcontainer  */}
-
-      {/* theme toggle  */}
       <div className=" flex items-center bg-gray-300 dark:bg-black  rounded-[10px] w-full">
         <button
           onClick={() => dispatch(setTheme("light"))}

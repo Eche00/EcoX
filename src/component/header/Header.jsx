@@ -11,11 +11,11 @@ function Header() {
   return (
     <div className=" w-full overflow-hidden">
       {/* container  */}
-      <main className=" lg:w-[75%] w-[90%] mx-auto my-10 p-5 flex items-center justify-between shadow-xl dark:shadow-none border-none dark:border-solid dark:border-1 shadow-blue-500/30  border-blue-500 rounded-[10px] bg-gradient-to-b from-80% from-white to-blue-500/10  dark:bg-none ">
+      <main className=" lg:w-[75%] w-[90%] mx-auto my-10 p-5 flex items-center justify-between shadow-xl dark:shadow-none border-none dark:border-solid dark:border-1 shadow-blue-500/30  border-[#034FE3] rounded-[10px] bg-gradient-to-b from-80% from-white to-[#034FE3]/10  dark:bg-none gap-[20px]">
         {/* logo section  */}
         <div className="flex items-baseline space-x-1 flex-1">
-          <FlareIcon className=" text-blue-500" fontSize="large" />
-          <hr className=" w-[2px] h-[25px] bg-gradient-to-b from-transparent to-blue-500 border-none" />
+          <FlareIcon className=" text-[#034FE3]" fontSize="large" />
+          <hr className=" w-[2px] h-[25px] bg-gradient-to-b from-transparent to-[#034FE3] border-none" />
           <span className="text-black dark:text-white font-bold text-lg">
             Eco𝕏
           </span>
@@ -25,21 +25,21 @@ function Header() {
           <NavLink
             to="/"
             className={({ isActive }) =>
-              isActive ? "text-blue-500" : "dark:text-white text-black"
+              isActive ? "text-[#034FE3]" : "dark:text-white text-black"
             }>
             Home
           </NavLink>
           <NavLink
             to="/about-us"
             className={({ isActive }) =>
-              isActive ? "text-blue-500" : "dark:text-white text-black"
+              isActive ? "text-[#034FE3]" : "dark:text-white text-black"
             }>
             About
           </NavLink>
           <NavLink
             to="/contact-us"
             className={({ isActive }) =>
-              isActive ? "text-blue-500" : "dark:text-white text-black"
+              isActive ? "text-[#034FE3]" : "dark:text-white text-black"
             }>
             Contact Us
           </NavLink>
@@ -49,14 +49,14 @@ function Header() {
           <ThemeModal />
           <Link
             to="/calculator"
-            className=" bg-[#3B82F6] px-[20px] py-[10px] h-full rounded-[8px] text-[16px] text-white cursor-pointer">
-            Calculator
+            className=" bg-gradient-to-b from-[0.1%] from-transparent to-[#034FE3]  shadow-lg px-[20px] py-[10px] h-full rounded-[8px] text-[15px] text-white  cursor-pointer text-nowrap">
+            Calculator Now !
           </Link>
         </div>
 
         {/* mobile navigation  */}
         <button
-          className="flex lg:hidden text-blue-500"
+          className="flex lg:hidden text-[#034FE3]"
           onClick={() => setOpen(!open)}>
           <MenuOpenIcon fontSize="large" />
         </button>
@@ -76,14 +76,14 @@ function Header() {
               {/* logo section  */}
               <section className=" flex items-center justify-between">
                 <div className="flex items-baseline space-x-1 ">
-                  <FlareIcon className=" text-blue-500" fontSize="large" />
-                  <hr className=" w-[2px] h-[25px] bg-gradient-to-b from-transparent to-blue-500 border-none" />
+                  <FlareIcon className=" text-[#034FE3]" fontSize="large" />
+                  <hr className=" w-[2px] h-[25px] bg-gradient-to-b from-transparent to-[#034FE3] border-none" />
                   <span className="text-black dark:text-white font-bold text-lg">
                     Eco𝕏
                   </span>
                 </div>
                 <button
-                  className=" text-blue-500"
+                  className=" text-[#034FE3]"
                   onClick={() => setOpen(!open)}>
                   <CloseIcon fontSize="medium" />
                 </button>
@@ -95,21 +95,21 @@ function Header() {
                 <NavLink
                   to="/"
                   className={({ isActive }) =>
-                    isActive ? "text-blue-500" : "dark:text-white text-black"
+                    isActive ? "text-[#034FE3]" : "dark:text-white text-black"
                   }>
                   Home
                 </NavLink>
                 <NavLink
                   to="/about-us"
                   className={({ isActive }) =>
-                    isActive ? "text-blue-500" : "dark:text-white text-black"
+                    isActive ? "text-[#034FE3]" : "dark:text-white text-black"
                   }>
                   About
                 </NavLink>
                 <NavLink
                   to="/contact-us"
                   className={({ isActive }) =>
-                    isActive ? "text-blue-500" : "dark:text-white text-black"
+                    isActive ? "text-[#034FE3]" : "dark:text-white text-black"
                   }>
                   Contact Us
                 </NavLink>
@@ -119,8 +119,8 @@ function Header() {
                 <ThemeModal />
                 <Link
                   to="/calculator"
-                  className=" bg-[#3B82F6] px-[20px] py-[10px] h-full rounded-[8px] text-[16px] text-white cursor-pointer">
-                  Calculator
+                  className=" bg-gradient-to-b from-[0.1%] from-transparent to-[#034FE3]  shadow-lg px-[20px] py-[10px] h-full rounded-[8px] text-[16px] text-white font-semibold cursor-pointer ">
+                  Calculator Now !
                 </Link>
               </div>
             </motion.div>
