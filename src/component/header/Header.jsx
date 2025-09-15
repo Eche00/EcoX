@@ -64,7 +64,7 @@ function Header() {
       <AnimatePresence>
         {open && (
           <section
-            className="flex lg:hidden fixed top-0 left-0 w-full h-[100vh] bg-black/20  dark:bg-black/40"
+            className="flex lg:hidden fixed top-0 left-0 w-full h-[100vh] bg-black/20  dark:bg-black/40 z-50"
             onClick={() => setOpen(!open)}>
             <motion.div
               initial={{ x: "-100%" }}
