@@ -1,6 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router";
 import Header from "./header/Header";
+import Footer from "./footer/footer";
 
 function Container() {
   return (
@@ -12,6 +13,7 @@ function Container() {
       <div className=" flex-1 min-h-[100vh]">
         <Outlet />
       </div>
+      <Footer />
     </div>
   );
 }
