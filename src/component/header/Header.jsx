@@ -48,7 +48,7 @@ function Header() {
         <div className=" lg:flex hidden items-center justify-end gap-2 flex-1">
           <ThemeModal />
           <Link
-            to="/"
+            to="/calculator"
             className=" bg-[#3B82F6] px-[20px] py-[10px] h-full rounded-[8px] text-[16px] text-white cursor-pointer">
             Calculator
           </Link>
@@ -63,12 +63,15 @@ function Header() {
       </main>
       <AnimatePresence>
         {open && (
-          <section className="flex lg:hidden fixed top-0 left-0 w-full h-[100vh] bg-black/20  dark:bg-black/40">
+          <section
+            className="flex lg:hidden fixed top-0 left-0 w-full h-[100vh] bg-black/20  dark:bg-black/40"
+            onClick={() => setOpen(!open)}>
             <motion.div
               initial={{ x: "-100%" }}
               animate={{ x: 0 }}
               exit={{ x: "-100%" }}
               transition={{ type: "spring", stiffness: 80, damping: 20 }}
+              onClick={(e) => e.stopPropagation()}
               className="bg-[#F0F8FF] dark:bg-[#0c0d13] w-[70%] flex flex-col p-5 gap-10">
               {/* logo section  */}
               <section className=" flex items-center justify-between">
@@ -85,8 +88,10 @@ function Header() {
                   <CloseIcon fontSize="medium" />
                 </button>
               </section>
-              {/* desktop navigation  */}
-              <nav className="flex flex-col  items-center gap-[20px] text-black dark:text-white font-bold text-[14px]">
+              {/* mobile navigation  */}
+              <nav
+                className="flex flex-col  items-center gap-[20px] text-black dark:text-white font-bold text-[14px] w-fit mx-auto"
+                onClick={() => setOpen(!open)}>
                 <NavLink
                   to="/"
                   className={({ isActive }) =>
@@ -109,11 +114,11 @@ function Header() {
                   Contact Us
                 </NavLink>
               </nav>
-              {/*  desktop buttons  */}
+              {/*  mobile buttons  */}
               <div className=" flex flex-col-reverse  items-center gap-5 ">
                 <ThemeModal />
                 <Link
-                  to="/"
+                  to="/calculator"
                   className=" bg-[#3B82F6] px-[20px] py-[10px] h-full rounded-[8px] text-[16px] text-white cursor-pointer">
                   Calculator
                 </Link>
