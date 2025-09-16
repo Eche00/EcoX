@@ -5,10 +5,12 @@ import { benefitsInfo } from "../../utils/benefits";
 import SolarPowerIcon from "@mui/icons-material/SolarPower";
 import SavingsIcon from "@mui/icons-material/AttachMoney";
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
+import Round from "./Round";
 
 function Benefits() {
   return (
     <div className=" py-[100px] relative">
+      <Round />
       {/* component Intro */}
       <span className=" absolute top-[-15px] left-[-16.5px] text-[#034FE3]/50">
         <AdjustIcon fontSize="large" />

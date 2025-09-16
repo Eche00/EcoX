@@ -2,7 +2,7 @@ import React from "react";
 import Hero from "./homesection/Hero";
 import Services from "./homesection/Services";
 import Benefits from "./homesection/Benefits";
-import Contact from "./homesection/Contact";
+import ContactUs from "./homesection/ContactUs";
 import Faqs from "./homesection/Faqs";
 import Testimonials from "./homesection/Testimonials";
 
@@ -15,7 +15,7 @@ function Home() {
         <Benefits />
         <Testimonials />
         <Faqs />
-        <Contact />
+        <ContactUs />
       </section>
     </div>
   );
