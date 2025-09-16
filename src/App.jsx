@@ -6,15 +6,19 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Calculator from "./pages/Calculator";
 import NotFound from "./component/NotFound";
+import ServicesWeOffer from "./pages/ServicesWeOffer";
+import ScrollToTop from "./component/ScrollToTop";
 
 function App() {
   return (
     <div className="w-full overflow-hidden bg-[#F0F8FF]  dark:bg-[#0c0d13]">
+      <ScrollToTop />
       <Routes>
         <Route element={<Container />}>
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<About />} />
           <Route path="/contact-us" element={<Contact />} />
+          <Route path="/services" element={<ServicesWeOffer />} />
           <Route path="/calculator" element={<Calculator />} />
           <Route path="*" element={<NotFound />} />
         </Route>

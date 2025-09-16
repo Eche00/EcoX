@@ -53,6 +53,15 @@ function Footer() {
                 About
               </NavLink>
               <NavLink
+                to="/services"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-[#008CFF]"
+                    : "text-gray-700 dark:text-[#F2F6FA] text-[16px] leading-[24px] font-[400] hover:underline"
+                }>
+                Services
+              </NavLink>
+              <NavLink
                 to="/contact-us"
                 className={({ isActive }) =>
                   isActive
