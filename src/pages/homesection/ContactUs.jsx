@@ -1,7 +1,7 @@
 import React from "react";
 import AdjustIcon from "@mui/icons-material/Adjust";
 
-function Contact() {
+function ContactUs() {
   return (
     <div className=" py-[100px] relative z-10">
       {/* component Intro */}
@@ -71,4 +71,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default ContactUs;
