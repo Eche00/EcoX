@@ -1,5 +1,5 @@
 import React from "react";
-import Hero from "./aboutsection/hero";
+import Hero from "./aboutsection/Hero";
 import ContactUs from "./homesection/ContactUs";
 import Mission from "./aboutsection/Mission";
 import SuccessStory from "./aboutsection/SuccessStory";
