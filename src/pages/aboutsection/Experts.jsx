@@ -1,6 +1,5 @@
 import React from "react";
 import AdjustIcon from "@mui/icons-material/Adjust";
-import { testimonials } from "../../utils/testimonials";
 import { motion } from "framer-motion";
 import { experts } from "../../utils/experts";
 import FlareIcon from "@mui/icons-material/Flare";
@@ -22,7 +21,7 @@ function Experts() {
           <span className=" text-[#034FE3] underline">Experts </span>
         </p>
         <p className=" text-[18px] font-[300] ">
-          Meet our solat Engeneering experts
+          Meet our solar Engeneering experts
         </p>
       </div>
 

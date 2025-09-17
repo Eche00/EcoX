@@ -37,7 +37,7 @@ function Hero() {
           viewport={{ once: true }}
           className=" flex items-center gap-[12px]">
           <Link
-            to="/our-services"
+            to="/services"
             className=" border-[0.4px] border-gray-300 dark:border-[#034FE3] bg-[#F0F8FF] dark:bg-[#0c0d13]  shadow-xl py-[15px] px-[42px] rounded-[8px] text-[16px] font-bold text-black dark:text-white  hover:scale-[105%]  transition-all duration-300 cursor-pointer">
             Our Services
           </Link>

@@ -6,8 +6,10 @@ import SolarPowerIcon from "@mui/icons-material/SolarPower";
 import BuildIcon from "@mui/icons-material/Build";
 import BatteryChargingFullIcon from "@mui/icons-material/BatteryChargingFull";
 import PaymentsIcon from "@mui/icons-material/Payments";
+import { useLocation } from "react-router";
 
 function Services() {
+  const location = useLocation();
   const servicesAnimation = [
     {
       title: "Solar Sales",
@@ -46,47 +48,49 @@ function Services() {
       </div>
       {/* Container  */}
       <main className="flex lg:flex-row flex-col items-start justify-between gap-[10px] py-10 px-[10px]">
-        <div className=" lg:w-[60%] w-full lg:h-[500px] h-[250px] rounded-[18px] overflow-hidden relative">
-          <img
-            src="/servicesimg1.png"
-            alt="services img"
-            loading="lazy"
-            className="w-full h-full object-cover z-0"
-          />
-          <motion.span
-            className="lg:h-[190px] h-[85px] w-full absolute top-0 left-0 z-10 bg-[#F0F8FF] dark:bg-[#0c0d13]"
-            initial={{ x: 0 }}
-            whileInView={{ x: "-100%" }}
-            transition={{ duration: 1, delay: 0.35 }}
-            viewport={{ once: true }}
-            style={{
-              clipPath: [
-                "polygon(0 0, calc(100% - 80px) 0, 100% 100%, 0 100%)",
-              ],
-            }}></motion.span>
-          <motion.span
-            className="lg:h-[190px] h-[85px] w-full absolute lg:top-[190px] top-[85px] left-0 z-10 bg-[#F0F8FF] dark:bg-[#0c0d13]"
-            initial={{ x: 0 }}
-            animate={{ x: "-100%" }}
-            transition={{ duration: 1, delay: 0.65 }}
-            viewport={{ once: true }}
-            style={{
-              clipPath: [
-                "polygon(0 0, calc(100% - 80px) 0, 100% 100%, 0 100%)",
-              ],
-            }}></motion.span>
-          <motion.span
-            className="lg:h-[190px] h-[85px] w-full absolute lg:top-[380px] top-[170px] left-0 z-10 bg-[#F0F8FF] dark:bg-[#0c0d13]"
-            initial={{ x: 0 }}
-            whileInView={{ x: "-100%" }}
-            transition={{ duration: 1, delay: 0.95 }}
-            viewport={{ once: true }}
-            style={{
-              clipPath: [
-                "polygon(0 0, calc(100% - 80px) 0, 100% 100%, 0 100%)",
-              ],
-            }}></motion.span>
-        </div>
+        {location.pathname != "/services" && (
+          <div className=" lg:w-[60%] w-full lg:h-[500px] h-[250px] rounded-[18px] overflow-hidden relative">
+            <img
+              src="/servicesimg1.png"
+              alt="services img"
+              loading="lazy"
+              className="w-full h-full object-cover z-0"
+            />
+            <motion.span
+              className="lg:h-[190px] h-[85px] w-full absolute top-0 left-0 z-10 bg-[#F0F8FF] dark:bg-[#0c0d13]"
+              initial={{ x: 0 }}
+              whileInView={{ x: "-100%" }}
+              transition={{ duration: 1, delay: 0.35 }}
+              viewport={{ once: true }}
+              style={{
+                clipPath: [
+                  "polygon(0 0, calc(100% - 80px) 0, 100% 100%, 0 100%)",
+                ],
+              }}></motion.span>
+            <motion.span
+              className="lg:h-[190px] h-[85px] w-full absolute lg:top-[190px] top-[85px] left-0 z-10 bg-[#F0F8FF] dark:bg-[#0c0d13]"
+              initial={{ x: 0 }}
+              animate={{ x: "-100%" }}
+              transition={{ duration: 1, delay: 0.65 }}
+              viewport={{ once: true }}
+              style={{
+                clipPath: [
+                  "polygon(0 0, calc(100% - 80px) 0, 100% 100%, 0 100%)",
+                ],
+              }}></motion.span>
+            <motion.span
+              className="lg:h-[190px] h-[85px] w-full absolute lg:top-[380px] top-[170px] left-0 z-10 bg-[#F0F8FF] dark:bg-[#0c0d13]"
+              initial={{ x: 0 }}
+              whileInView={{ x: "-100%" }}
+              transition={{ duration: 1, delay: 0.95 }}
+              viewport={{ once: true }}
+              style={{
+                clipPath: [
+                  "polygon(0 0, calc(100% - 80px) 0, 100% 100%, 0 100%)",
+                ],
+              }}></motion.span>
+          </div>
+        )}
         <section className="flex flex-wrap items-center justify-center gap-6 py-10">
           {servicesAnimation.map((service, i) => (
             <motion.div
