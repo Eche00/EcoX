@@ -44,6 +44,13 @@ function Header() {
             Services
           </NavLink>
           <NavLink
+            to="/products"
+            className={({ isActive }) =>
+              isActive ? "text-[#034FE3]" : "dark:text-white text-black"
+            }>
+            Products
+          </NavLink>
+          <NavLink
             to="/contact-us"
             className={({ isActive }) =>
               isActive ? "text-[#034FE3]" : "dark:text-white text-black"
@@ -113,19 +120,27 @@ function Header() {
                   }>
                   About
                 </NavLink>
-                <NavLink
-                  to="/contact-us"
-                  className={({ isActive }) =>
-                    isActive ? "text-[#034FE3]" : "dark:text-white text-black"
-                  }>
-                  Contact Us
-                </NavLink>
+
                 <NavLink
                   to="/services"
                   className={({ isActive }) =>
                     isActive ? "text-[#034FE3]" : "dark:text-white text-black"
                   }>
                   Services
+                </NavLink>
+                <NavLink
+                  to="/products"
+                  className={({ isActive }) =>
+                    isActive ? "text-[#034FE3]" : "dark:text-white text-black"
+                  }>
+                  products
+                </NavLink>
+                <NavLink
+                  to="/contact-us"
+                  className={({ isActive }) =>
+                    isActive ? "text-[#034FE3]" : "dark:text-white text-black"
+                  }>
+                  Contact Us
                 </NavLink>
               </nav>
               {/*  mobile buttons  */}

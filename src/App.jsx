@@ -8,6 +8,7 @@ import Calculator from "./pages/Calculator";
 import NotFound from "./component/NotFound";
 import ServicesWeOffer from "./pages/ServicesWeOffer";
 import ScrollToTop from "./component/ScrollToTop";
+import Products from "./pages/Products";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/about-us" element={<About />} />
           <Route path="/contact-us" element={<Contact />} />
           <Route path="/services" element={<ServicesWeOffer />} />
+          <Route path="/products" element={<Products />} />
           <Route path="/calculator" element={<Calculator />} />
           <Route path="*" element={<NotFound />} />
         </Route>
