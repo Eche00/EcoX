@@ -42,7 +42,7 @@ function Hero() {
                 )}
               </span>
             </div>
-            <h2 className=" sm:text-[20px] text-[32px] sm:w-full w-[309px] text-[#034FE3] font-[600] text-center">
+            <h2 className=" text-[20px] sm:text-[32px] sm:w-full w-[309px] text-[#034FE3] font-[600] text-center">
               {b.title}
             </h2>
             <p className=" min-w-[200px] text-black dark:text-white text-center">

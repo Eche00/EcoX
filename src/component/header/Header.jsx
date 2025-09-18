@@ -11,17 +11,17 @@ function Header() {
   return (
     <div className=" w-full overflow-hidden">
       {/* container  */}
-      <main className=" lg:w-[75%] w-[90%] mx-auto my-10 p-5 flex items-center justify-between shadow-xl dark:shadow-none border-none dark:border-solid dark:border-1 shadow-blue-500/30  border-[#034FE3] rounded-[10px] bg-gradient-to-b from-80% from-white to-[#034FE3]/10  dark:bg-none gap-[20px]">
+      <main className=" xxl:w-[75%] w-[90%] mx-auto my-10 p-5 flex items-center justify-between shadow-xl dark:shadow-none border-none dark:border-solid dark:border-1 shadow-blue-500/30  border-[#034FE3] rounded-[10px] bg-gradient-to-b from-80% from-white to-[#034FE3]/10  dark:bg-none gap-[20px]">
         {/* logo section  */}
         <div className="flex items-baseline space-x-1 flex-1">
           <FlareIcon className=" text-[#034FE3]" fontSize="large" />
           <hr className=" w-[2px] h-[25px] bg-gradient-to-b from-transparent to-[#034FE3] border-none" />
-          <span className="text-black dark:text-white font-bold text-lg">
+          <span className="text-black dark:text-white font-bold text-xxl">
             Eco𝕏
           </span>
         </div>
         {/* desktop navigation  */}
-        <nav className="lg:flex hidden items-center gap-[20px] text-black dark:text-white font-bold text-[14px]">
+        <nav className="xxl:flex hidden items-center gap-[20px] text-black dark:text-white font-bold text-[14px]">
           <NavLink
             to="/"
             className={({ isActive }) =>
@@ -59,18 +59,18 @@ function Header() {
           </NavLink>
         </nav>
         {/*  desktop buttons  */}
-        <div className=" lg:flex hidden items-center justify-end gap-2 flex-1">
+        <div className=" xxl:flex hidden items-center justify-end gap-2 flex-1">
           <ThemeModal />
           <Link
             to="/calculator"
-            className=" bg-gradient-to-b from-[0.1%] from-transparent to-[#034FE3]  shadow-lg px-[20px] py-[10px] h-full rounded-[8px] text-[15px] text-white  cursor-pointer text-nowrap">
+            className=" bg-gradient-to-b from-[0.1%] from-transparent to-[#034FE3]  shadow-xxl px-[20px] py-[10px] h-full rounded-[8px] text-[15px] text-white  cursor-pointer text-nowrap">
             Calculator Now !
           </Link>
         </div>
 
         {/* mobile navigation  */}
         <button
-          className="flex lg:hidden text-[#034FE3]"
+          className="flex xxl:hidden text-[#034FE3]"
           onClick={() => setOpen(!open)}>
           <MenuOpenIcon fontSize="large" />
         </button>
@@ -78,7 +78,7 @@ function Header() {
       <AnimatePresence>
         {open && (
           <section
-            className="flex lg:hidden fixed top-0 left-0 w-full h-[100vh] bg-black/20  dark:bg-black/40 z-50"
+            className="flex xxl:hidden fixed top-0 left-0 w-full h-[100vh] bg-black/20  dark:bg-black/40 z-50"
             onClick={() => setOpen(!open)}>
             <motion.div
               initial={{ x: "-100%" }}
@@ -92,7 +92,7 @@ function Header() {
                 <div className="flex items-baseline space-x-1 ">
                   <FlareIcon className=" text-[#034FE3]" fontSize="large" />
                   <hr className=" w-[2px] h-[25px] bg-gradient-to-b from-transparent to-[#034FE3] border-none" />
-                  <span className="text-black dark:text-white font-bold text-lg">
+                  <span className="text-black dark:text-white font-bold text-xxl">
                     Eco𝕏
                   </span>
                 </div>
@@ -148,7 +148,7 @@ function Header() {
                 <ThemeModal />
                 <Link
                   to="/calculator"
-                  className=" bg-gradient-to-b from-[0.1%] from-transparent to-[#034FE3]  shadow-lg px-[20px] py-[10px] h-full rounded-[8px] text-[16px] text-white font-semibold cursor-pointer ">
+                  className=" bg-gradient-to-b from-[0.1%] from-transparent to-[#034FE3]  shadow-xxl px-[20px] py-[10px] h-full rounded-[8px] text-[16px] text-white font-semibold cursor-pointer ">
                   Calculator Now !
                 </Link>
               </div>
