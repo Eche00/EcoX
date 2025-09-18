@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 
 function Sidebar({ appliances, onSelect }) {
   return (
@@ -8,12 +7,7 @@ function Sidebar({ appliances, onSelect }) {
         Appliances
       </h2>
       <div className="xxl:w-fit w-full overflow-scroll xxl:p-2  ">
-        <motion.section
-          initial={{ opacity: 0, y: 50, scale: 0.8 }}
-          whileInView={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ duration: 0.6, delay: 0.2, type: "spring" }}
-          viewport={{ once: true }}
-          className=" w-fit xxl:h-[70vh] overflow-scroll flex xxl:grid grid-cols-2 items-center gap-6 py-10 xxl:border-3 dark:border-none border-blue-700 rounded-[10px] p-2">
+        <section className=" w-fit xxl:h-[70vh] overflow-scroll flex xxl:grid grid-cols-2 items-center gap-6 py-10 xxl:border-3 dark:border-none border-blue-700 rounded-[10px] p-2">
           {appliances.map((appliance, i) => (
             <div
               key={i}
@@ -25,7 +19,7 @@ function Sidebar({ appliances, onSelect }) {
               </p>
             </div>
           ))}
-        </motion.section>
+        </section>
       </div>
     </div>
   );
